@@ -1,4 +1,5 @@
 import React from 'react'
+import DrawSketch from './sketch'
 
 const LandingPage = () => 
 {
@@ -7,6 +8,7 @@ const LandingPage = () =>
         <header className="App-header">
             <div> Initial commit </div>
             <canvas></canvas>
+            <DrawSketch></DrawSketch>
         </header>
     </div>
     )

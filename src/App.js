@@ -1,9 +1,11 @@
 import './App.css';
-import {
-  Switch,
-  Route,
-  useParams
-} from "react-router-dom";
+
+// For routing later
+// import {
+//   Switch,
+//   Route,
+//   useParams
+// } from "react-router-dom";
 
 import LandingPage from './containers/LandingPage';
 

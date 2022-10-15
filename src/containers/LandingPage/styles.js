@@ -14,4 +14,4 @@ export const LandingHeader = styled.div`
     font-size: calc(10px + 2vmin);
     color: black;
 `
-  
+

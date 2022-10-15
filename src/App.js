@@ -7,16 +7,18 @@
 
 import { ThemeProvider } from "styled-components";
 import theme from "./theme";
+import { BrowserRouter as Router } from 'react-router-dom'
 
-import LandingPage from './containers/LandingPage';
+import TempPage from './containers/TempPage';
 
 function App() {
   return (
     <>
-      <ThemeProvider theme = {theme}>
-        <LandingPage />
-        <div> refactor! </div> 
-      </ThemeProvider>
+      <Router>
+        <ThemeProvider theme = {theme}>
+          <TempPage />
+        </ThemeProvider>
+      </Router>
       
     </>
   )

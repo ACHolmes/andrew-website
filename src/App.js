@@ -1,5 +1,3 @@
-import './App.css';
-
 // For routing later
 // import {
 //   Switch,
@@ -7,13 +5,19 @@ import './App.css';
 //   useParams
 // } from "react-router-dom";
 
+import { ThemeProvider } from "styled-components";
+import theme from "./theme";
+
 import LandingPage from './containers/LandingPage';
 
 function App() {
   return (
     <>
-      <LandingPage />
-      <div> refactor! </div> 
+      <ThemeProvider theme = {theme}>
+        <LandingPage />
+        <div> refactor! </div> 
+      </ThemeProvider>
+      
     </>
   )
 }

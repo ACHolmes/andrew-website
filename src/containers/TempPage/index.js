@@ -1,11 +1,10 @@
 import React from 'react'
-import DrawSketch from './sketch'
-import { Background, GitButton, GitLogo, TempBody, TempH1, TempHeader, TempText, BackgroundCanvas } from './styles'
+import { Background, GitButton, GitLogo, TempBody, TempH1, TempHeader, TempText } from './styles'
 import logo from '../../assets/github.png'
+import TempSketch from '../../components/TempSketch'
 
 const TempPage = () => 
 {
-
     const RedirectPage = () => {
         window.open('https://github.com/ACHolmes/andrew-website');
       };
@@ -13,8 +12,7 @@ const TempPage = () =>
     return (
         <Background>
             <TempHeader>
-                {/* <BackgroundCanvas />
-                <DrawSketch/> */}
+                <TempSketch/>
                 <TempBody>
                     <TempText>
                     <TempH1>
@@ -32,8 +30,6 @@ const TempPage = () =>
                         View Github Repo!
                     </GitButton>
                     </TempText>
-                    
-                    
                 </TempBody>
             </TempHeader> 
         </Background>

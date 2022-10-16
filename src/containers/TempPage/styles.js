@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import logo from "../../assets/github.png"
 
 export const Background = styled.div`
     text-align: center;
@@ -17,6 +16,7 @@ export const TempHeader = styled.div`
 `
 
 export const TempBody = styled.div`
+    z-index: 2;
     background-color: ${props => props.theme.colors.white};
     height: 40vh;
     width: 60vw;
@@ -57,12 +57,4 @@ export const GitButton = styled.button`
 export const GitLogo = styled.img`
     width: 28px;
     padding-right: 8px;
-`
-
-export const BackgroundCanvas = styled.canvas`
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    position: (0, 0);
 `
